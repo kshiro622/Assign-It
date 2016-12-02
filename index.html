@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel='shortcut icon' href='assets/images/favicon.ico' type='image/x-icon' />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <!-- Navbar -->
+            <div class="navbar-fixed">
+                <nav class="z-depth-2 top-nav" id="header">
+                    <div class="nav-wrapper">
+                        <div class="brand-logo animated bounceIn" id="assign-it">
+                            <i class="material-icons" id="logo">recent_actors</i>Assign It
+                        </div>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="index.html" class="nav-links">Assign</a></li>
+                            <li><a href="view_students.html" class="nav-links">View Students</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Search and Tabs Row -->
+            <div class="row">
+                <div class="col s9 m9 l9 margin-top">
+                    <div class="row">
+                        <!-- Search Bar -->
+                        <div class="col s4 m4 l4">
+                            <nav>
+                                <div class="nav-wrapper">
+                                    <form>
+                                        <div class="input-field white search-bar">
+                                            <input id="search-box" placeholder="Search" type="search" required>
+                                            <label for="search-box">
+                                                <i class="material-icons search-icons">search</i>
+                                            </label>
+                                            <i class="material-icons search-icons">close</i>
+                                        </div>
+                                    </form>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Search Button -->
+                        <div class="col s2 m2 l2">
+                            <button id="search-button" class="btn waves-effect waves-light" type="submit" name="action">
+                                Search
+                                <i class="material-icons right">search</i>
+                            </button>
+                        </div>
+                        <!-- Tabs -->
+                        <div class="col s6 m6 l6 tab-margin">
+                            <div class="row">
+                                <div class="col s12" id="tab-padding">
+                                    <ul class="tabs">
+                                        <li class="tab col s4"><a data-site="youtube" class="site" id="youtube" href="#test1">YouTube</a></li>
+                                        <li class="tab col s4"><a data-site="khan" class="site" href="#test2" id="khan">Khan</a></li>
+                                        <li class="tab col s4"><a data-site="coursera" class="site" href="#test3" id="coursera">Coursera</a></li>
+                                    </ul>
+                                </div>
+                                <div id="test1" class="col s12"></div>
+                                <div id="test2" class="col s12"></div>
+                                <div id="test3" class="col s12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Preloader -->
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            <div class="preloader-wrapper big active">
+                                <div class="spinner-layer spinner-red-only">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MODALS -->
+                    <!-- Modal: Enter student name -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <p class="modal-text">Please enter a student name.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">OK</a>
+                        </div>
+                    </div>
+                    <!-- Modal: Enter search topic -->
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <p class="modal-text">Please enter a topic to search.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">OK</a>
+                        </div>
+                    </div>
+                    <!-- Modal: Site clicked without search term -->
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <p class="modal-text">Please enter a search term first.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">OK</a>
+                        </div>
+                    </div>
+                    <!-- Modal: Select student and video -->
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <p class="modal-text">Please select both a video and a student.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">OK</a>
+                        </div>
+                    </div>
+                    <!-- Modal: Are you sure you want to Delete-->
+                    <div id="modal5" class="modal">
+                        <div class="modal-content">
+                            <p class="modal-text">Are you sure you want to delete this student?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves btn-flat" id="no">No</a>
+                            <a href="#!" class=" modal-action modal-close waves-effect waves btn-flat" id="yes">Yes</a>
+                        </div>
+                    </div>
+                    <!-- Getting Started and Cards -->
+                    <div class="row card-background">
+                        <div class="col s12 m12 l12" id="search-links">
+                            <div>
+                                <h4>Getting Started</h4>
+                                <p class="getting-started-text">Enter a topic into the search bar to see the top 10 results from YouTube, Khan Academy, and Coursera. Assign resources to individual students by selecting both a resource and a student and clicking Assign.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- STUDENT PANEL -->
+                <!-- Name and Email Form -->
+                <div class="col s3 m3 l3 right sticky_column margin-top-2">
+                    <div class="panel margin-none">
+                        <div class="row">
+                            <form action="submit">
+                                <div class="input-field col s12" id="student-input">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_name" type="text" class="validate">
+                                    <label for="icon_name">Student Name</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <form action="submit">
+                                <div class="input-field col s12" id="email-input">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="icon_email" type="tel" class="validate">
+                                    <label for="icon_email">E-mail</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Add Button -->
+                        <div class="row">
+                            <div class="col s7 m7 l7"></div>
+                            <button id="add-button" class="btn waves-effect waves-light col s5 m5 l5" type="submit" name="action">
+                                Add
+                                <i class="material-icons right rotate">add</i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- List of Students -->
+                    <div class="row">
+                        <div class="col s12" id="no-padding">
+                            <div class="collection" id="student-list"></div>
+                        </div>
+                    </div>
+                    <!--   Assign Button -->
+                    <div class="row">
+                        <div class="col s12">
+                            <button id="assign-button" class="btn waves-effect waves-light col s5 m5 l5 right modal-trigger" type="submit" name="action">
+                                Assign
+                                <i class="material-icons right lightspeed">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer" id="footer">
+        <div class="row">
+            <div class="col l2"></div>
+            <div class="col l2 s6 center">
+                <h5>Developed By</h5>
+            </div>
+            <div class="col l2 s6 center">
+                <p>Justin Carlson</p>
+                <a href="https://github.com/JustinRyanCarlson" target="_blank">
+                    <img src="assets/images/githubicon.png" height="10" alt="GitHub" class="connect-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/justinryancarlson" target="_blank">
+                    <img src="assets/images/linkedinicon.png" height="10" alt="LinkedIn" class="connect-icon">
+                </a>
+            </div>
+            <div class="col l2 s6 center">
+                <p>Katie Shiro</p>
+                <a href="https://github.com/kshiro622" target="_blank">
+                    <img src="assets/images/githubicon.png" height="30" alt="GitHub" class="connect-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/katie-shiro" target="_blank">
+                    <img src="assets/images/linkedinicon.png" height="30" alt="LinkedIn" class="connect-icon">
+                </a>
+            </div>
+            <div class="col l2 s6 center">
+                <p>Dee Terwilliger</p>
+                <a href="https://github.com/deenyt" target="_blank">
+                    <img src="assets/images/githubicon.png" height="30" alt="GitHub" class="connect-icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="assets/images/linkedinicon.png" height="30" alt="LinkedIn" class="connect-icon">
+                </a>
+            </div>
+            <div class="col l2"></div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2016 Copyright Justin Carlson, Katie Shiro, and Dee Terwilliger
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/api.js"></script>
+    <script type="text/javascript" src="assets/javascript/firebase.js"></script>
+    <script type="text/javascript" src="assets/javascript/assign.js"></script>
+    <script type="text/javascript" src="assets/javascript/sticky.js"></script>
+</body>
+
+</html>

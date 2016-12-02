@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: white;
+    height: 100%;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.prefix,
+#icon_email,
+#icon_name {
+    color: white;
+}
+
+#student-input,
+#email-input,
+.validate {
+    margin-bottom: 0px;
+}
+
+#search-button {
+    margin-top: 10px;
+}
+
+.panel {
+    background: rgba(204, 204, 204, 0.3);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#no-padding {
+    padding: 0px;
+}
+
+.nav-extended {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nav-links {
+    color: salmon;
+}
+
+.brand-logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logo {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+#picturesFrontPage {
+    font-size: 40px;
+    background-color: #cfd8dc;
+    font-family: Comic sans, Calibri, Trebuchet, sans-serif;
+    margin-bottom: 500px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#slideshow {
+    margin: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 1px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+/*Columns no padding*/
+
+.col.s12.m12.l12,
+.col.s12.m6.l6,
+.col.s7.m7.l7 {
+    padding: 0px;
+}
+
+.col.s5.m5.l5 {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+
+/*Header*/
+
+#header {
+    background: white;
+    margin-top: 0px;
+}
+
+#assign-it {
+    color: #465a66;
+}
+
+#start-button {
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+
+/*Footer*/
+
+.page-footer {
+    color: white;
+}
+
+.footer-copyright {
+    margin-top: 0px;
+}
+
+#footer {
+    background: #bdbdbd;
+    padding-top: 3px;
+    margin-top: -50px;
+}
+
+.connect-icon {
+    height: 30px;
+    width: auto;
+}
+
+.content {
+    min-height: 100%;
+}
+
+.content-inside {
+    padding-bottom: 50px;
+}
+
+
+/*Middle Text*/
+
+.tagline {
+    color: white;
+    font-size: 40px;
+}
+
+.middle-text {
+    position: absolute;
+    top: 250px;
+    left: 430px;
+}
+
+
+/*About Area*/
+
+.teal-about {
+    height: 110px;
+    background: lightseagreen;
+    color: white;
+    font-size: 20px;
+}
+
+.quote {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.cassie {
+    font-size: 17px;
+}
+
+.designed-for {
+    margin-top: 35px;
+    font-size: 22px;
+}
+
+.turned-around-student {
+    width: auto;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.about {
+    background: white;
+    color: #465a66;
+}
