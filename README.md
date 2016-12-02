@@ -4,7 +4,8 @@ A multi-platform differentiation tool that allows teachers to search for, and as
 ##Technologies
 HTML5, CSS, Materialize, Javascript, jQuery, Animate.CSS, YouTube API, Coursera API, Firebase
 
-##Built withSublime Text - Text editor
+##Built with
+- Sublime Text - Text editor
 - HTML - Web markup language
 - CSS - Styling for HTML
 - Materialize - Predefined CSS classes for styling, grid structure for page layout
