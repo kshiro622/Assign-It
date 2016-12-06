@@ -3,11 +3,11 @@ $(document).ready(function() {
     // FIREBASE INITIALIZE ==================================================================================
     //
     var config = {
-        apiKey: "AIzaSyA0WvCTQpp042R62Jtz3Gy_qXbDnNm97XE",
-        authDomain: "planning-for-differentiation.firebaseapp.com",
-        databaseURL: "https://planning-for-differentiation.firebaseio.com",
-        storageBucket: "planning-for-differentiation.appspot.com",
-        messagingSenderId: "490282172405"
+        apiKey: "AIzaSyD-9fvYxn1sAxKuAb7mtF0qCQyfZiZ2cDU",
+        authDomain: "assign-it.firebaseapp.com",
+        databaseURL: "https://assign-it.firebaseio.com",
+        storageBucket: "assign-it.appspot.com",
+        messagingSenderId: "701919698493"
     };
     firebase.initializeApp(config);
     //
